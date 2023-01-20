@@ -37,6 +37,18 @@
   const stopButton = document.querySelector('#stop');
 
   //Your code goes here
+speakButton.addEventListener("click", () => {
+  speech.text = document.querySelector("text").value;
+  window.speechSynthesis.speak(speech);
+});
+stopButton.addEventListener("click", () =>{
+  window.speechSynthesis.stop();
+});
+
+
+
+
+
 </script>
 
 </body>
